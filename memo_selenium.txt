@@ -3,7 +3,7 @@
 セレニウム起動
 
 
-cd ~/workspace/github/microservices/selenium
+cd ~/workspace/github/tools/selenium
 
 source venv/bin/activate
 
@@ -28,7 +28,7 @@ python -m app.entrypoints.main
 selenium
 
 
-cd ~/workspace/github/microservices/selenium
+cd ~/workspace/github/tools/selenium
 
 python3 -m venv venv
 
