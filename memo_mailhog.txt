@@ -1,0 +1,24 @@
+-----------------------------------
+
+メールキャッチャー
+
+
+dockerデスクトップ起動
+
+docker run -d --name mailhog -p 1025:1025 -p 8025:8025 mailhog/mailhog
+
+一度作った後は、Docker Desktopから起動できる
+
+
+状態確認
+docker ps -a
+
+再起動
+docker start mailhog
+
+
+http://localhost:8025/
+
+
+-----------------------------------
+
