@@ -1,0 +1,64 @@
+-----------------------------------
+
+Redis
+
+redis-cli
+
+キー取得
+
+keys *
+
+値取得
+
+get key
+
+rpushの値の取得
+
+LRANGE key 0 -1
+
+publish受信
+
+PSUBSCRIBE *
+
+モニター
+
+MONITOR
+
+-----------------------------------
+
+nginx
+
+systemctl status nginx
+systemctl status php8.3-fpm
+
+sudo service nginx restart
+sudo service php8.3-fpm restart
+
+sudo vi /etc/nginx/sites-available/laravel_app
+
+http://localhost:8080/
+
+
+-----------------------------------
+
+ポスグレ接続
+
+windows
+
+sudo -u postgres psql
+
+mac
+
+psql postgres
+
+
+DB一覧
+\l
+
+DB切り替え
+\c db_name
+
+テーブル一覧
+dt
+
+-----------------------------------

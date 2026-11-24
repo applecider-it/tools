@@ -1,0 +1,92 @@
+
+-----------------------------------
+
+プロジェクトごとに、ユーザー変える
+
+git config user.name "test"
+git config user.email "test@localhost"
+
+
+-----------------------------------
+
+キー作成
+
+ssh-keygen -t ed25519 -C "wsl.dev"
+
+
+.pubを、githubに登録
+
+-----------------------------------
+
+~/.ssh/config
+
+Linux / WSL
+
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_github_applecider
+
+Mac
+
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_github_applecider
+    AddKeysToAgent yes
+    UseKeychain yes
+
+-----------------------------------
+
+WSLで、毎回パスフレーズを入力しない方法
+
+----
+
+WSLを再起動するまで有効
+
+sudo apt update
+sudo apt install keychain -y
+
+
+.bashrcに追加
+
+if command -v keychain >/dev/null 2>&1; then
+  eval $(keychain --eval --quiet ~/.ssh/id_ed25519_github_applecider)
+fi
+
+----
+
+ターミナルを閉じるまで有効
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_ed25519_github_applecider
+
+ssh-add -l
+
+-----------------------------------
+
+クローン
+
+git clone git@github-personal:applecider-it/applecider-it.git
+
+-----------------------------------
+
+gitコマンド
+
+
+ローカルブランチ切り替え
+
+git switch main
+
+リモートブランチ一覧
+
+git branch -r
+
+ローカルにあるリモートブランチ情報の整合性をとる
+
+git fetch --prune
+
+ローカルブランチ削除
+
+git branch -d feature/branch_name
