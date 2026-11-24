@@ -5,7 +5,7 @@
 
 soketi起動
 
-cd ~/workspace/github/microservices/soketi
+cd ~/workspace/github/tools/soketi
 
 nvm use 18
 
@@ -18,7 +18,7 @@ nvm use 18
 
 soketi
 
-cd ~/workspace/github/microservices/soketi
+cd ~/workspace/github/tools/soketi
 
 必要なら
   nvm install 18
