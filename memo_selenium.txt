@@ -2,6 +2,12 @@
 
 セレニウム起動
 
+railsでは、システムテストでセレニウムが動くので、これは不要
+
+rails以外でseleniumを使いたいときは、これを使う
+
+複雑な導線のJSフレームワークの実装時では、これを使うと便利
+
 
 cd ~/workspace/github/tools/selenium
 
