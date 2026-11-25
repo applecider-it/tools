@@ -17,6 +17,10 @@ python -m app.entrypoints.main sample
 
 python -m app.entrypoints.main sample2
 
+終了する時
+
+deactivate
+
 ----
 
 ログイン
