@@ -28,6 +28,16 @@ MONITOR
 
 HGETALL key
 
+
+コマンドラインから直接取得
+
+redis-cli keys '*'
+
+ワイルドカードで削除
+
+redis-cli --scan --pattern 'key.*' | xargs -r redis-cli DEL
+
+
 -----------------------------------
 
 nginx
