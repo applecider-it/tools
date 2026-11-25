@@ -24,6 +24,10 @@ PSUBSCRIBE *
 
 MONITOR
 
+ハッシュを見る
+
+HGETALL key
+
 -----------------------------------
 
 nginx
