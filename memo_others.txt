@@ -76,3 +76,16 @@ DB切り替え
 dt
 
 -----------------------------------
+
+VSCode
+
+空白文字の表示
+Editor: Render Whitespace
+
+ファイルを閉じたときの履歴
+Files: Restore Undo Stack
+
+自動更新
+Update: Mode
+
+-----------------------------------
