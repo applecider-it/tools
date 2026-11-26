@@ -13,6 +13,8 @@ docker compose up
 
   最初は何度か起動しないといけない場合がある
 
+一度作った後は、Docker Desktopから起動できる
+
 --
 
 http://localhost:8080/wp-admin/
